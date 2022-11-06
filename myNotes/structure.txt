@@ -1,0 +1,23 @@
+Μέσα στον φάκελο src βάζουμε τους παρακάτω φακέλους:
+
+assets
+components  (χρησιμοποιούνται μέσα σε pages, π.χ. NavBar.js, FormInput.js)
+context
+data        (βάζουμε αρχεία json ή constant variables)
+features    (π.χ. authentication, κάθε feature έχει το δικό του structure 
+             και το δικό του αρχείο index.js)
+hooks
+layouts     (optional, είναι για τα components)
+lib         (για thirdy part libraries, π.χ. axios, υλοποιούμε το facade pattern)
+pages       (κάθε page μπορεί να περιέχει πολλά αρχεία js, 
+             και κάθε αρχείο js μπορεί να περιέχει ένα ή πολλά components)
+services    (intergration with APIs)
+utils       (βάζουμε κυρίως pure functions)
+
+
+
+Μαζί με τα αρχεία:
+
+App.js
+App.test.js
+index.js

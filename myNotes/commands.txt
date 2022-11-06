@@ -13,4 +13,4 @@ npm install
 }
 
 ΓΙΑ ΝΑ ΞΕΚΙΝΗΣΕΙ Η ΕΦΑΡΜΟΓΗ
-npm run dev
+npm run dev ή npm start
