@@ -1,0 +1,8 @@
+Flow is a static type checker that helps you write code with fewer bugs.
+Recent versions of Flow work with Create React App projects out of the box.
+npm install --save flow-bin
+
+
+Relay is a framework for building data-driven React applications powered by GraphQL. 
+The current release of Relay works with Create React App projects out of the box using Babel Macros.
+npm install --save babel-plugin-relay
