@@ -1,5 +1,7 @@
 ΔΗΜΙΟΥΡΓΙΑ ΤΟΥ PROJECT
-npm create vite ή npx create-react-app my-app
+npm create vite 
+ή npx create-react-app my-app
+ή npx create-react-app . (create project in current folder)
 (npx is a package runner tool that comes with npm 5.2+.)
 
 
@@ -28,7 +30,9 @@ npm install
 
 
 ΓΙΑ ΝΑ ΞΕΚΙΝΗΣΕΙ Η ΕΦΑΡΜΟΓΗ
-npm run dev ή npm start ή npm run start
+npm run dev 
+ή npm start 
+ή npm run start
 
 
 INSTALLING A LIBRARY

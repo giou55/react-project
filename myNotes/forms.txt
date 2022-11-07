@@ -1,0 +1,14 @@
+const inputRef = useRef();
+
+function onSubmit(e) {
+    e.preventDefault();
+}
+
+return (
+    <>
+        <form onSubmit={onSubmit}>
+            <input ref={inputRef} type="text" />
+            <button type="submit">Submit</button>
+        </form>
+    </>
+)

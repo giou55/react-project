@@ -1,0 +1,11 @@
+const [items, setItems] = useState(["car", "ball", "toy"]);
+
+return (
+    <>
+        <h3>Items:</h3>
+
+        {items.map(item => (
+            <div>{item}</div>
+        ))}
+    </>
+)
