@@ -1,0 +1,22 @@
+const emailRef = useRef();
+
+function onSubmit(e) {
+    e.preventDefault();
+    const value = emailRef.current.value;
+    console.log(value);
+}
+
+return (
+    <>
+        <form onSubmit={onSubmit}>
+            <label htmlFor="email">Email</label>
+            <input 
+                ref={emailRef} 
+                value={data.email}
+                type="email" 
+                id="email" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </>
+)
