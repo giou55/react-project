@@ -1,0 +1,29 @@
+The one big downside to not storing data in state is that the data 
+needs to be recomputed every render. 
+
+Luckily, React has thought of this already and has a hook called 
+useMemo for this exact problem. 
+
+When state is derived that is slow and/or cpu intensive the useMemo 
+hook can be used to only recompute the value when the state it is 
+derived from is changed.
+
+
+ΠΑΡΑΔΕΙΓΜΑ:
+const selectedUser = useMemo(() => {
+  return users.find(user => user.id === selectedUserId)
+}, [users, selectedUserId])
+
+
+This hook works very similar to useEffect in that the first parameter 
+is a function that is run every time the dependencies in the second 
+argument array change. This means that to use this hook the first 
+parameter should be the function that derives the state just as if 
+useMemo was not being used. Then the second parameter is an array of 
+all the state that this variable is derived from. It is as simple as that. 
+React will take care of all the memoization for you.
+
+As a reminder, useMemo should only be used with values that are slow to 
+calculate. In this example the selectedUser is quick to calculate so the 
+extra overhead of useMemo will not give any speed increases and may 
+actually slow the app down.

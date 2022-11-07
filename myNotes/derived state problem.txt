@@ -1,0 +1,33 @@
+You should never store derived state.
+derived state is some state in an application that can be derived 
+or created from the already stored state of that application
+
+The code below is storing derived state. The selectedUser is derived state 
+from the users array. This is because the name of the selectedUser is 
+defined in the users array and should not be duplicated in the selectedUser 
+variable. By having this duplication the app needs to update the selectedUser 
+every time that user is changed in the users array.
+
+function User() {
+  const [users, setUsers] = useState([
+    { id: 1, name: 'Kyle' },
+    { id: 2, name: 'John' }
+  ])
+  const [selectedUser, setSelectedUser] = useState()
+
+  function selectUser(id) {
+    const user = users.find(user => user.id === id)
+    setSelectedUser({ ...user }
+  }
+
+  function updateUser(id, name) {
+    setUsers(prevUsers => {
+      const newUsers = [...prevUsers]
+      const user = newUsers.find(user => user.id === id)
+      user.name = name
+      return newUsers
+    })
+  }
+
+  return users.map(user => user.name).join(', ')
+}

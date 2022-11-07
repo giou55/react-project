@@ -2,12 +2,20 @@ const inputRef = useRef();
 
 function onSubmit(e) {
     e.preventDefault();
+    const value = inputRef.current.value;
+    console.log(value);
+}
+
+function onChange(e) {
+    const value = e.target.value;
+    console.log(value);
 }
 
 return (
     <>
         <form onSubmit={onSubmit}>
             <input ref={inputRef} type="text" />
+            <input onChange={onChange} type="text" />
             <button type="submit">Submit</button>
         </form>
     </>
