@@ -4,9 +4,11 @@ React allows you to split your large bundle file into multiple smaller chunks
 using Code splitting. And these chunks are dynamically imported using import()  
 and then loaded on-demand using React.lazy.
 
+
 Step 1: Transform the normal React imports to dynamic imports.
 const Home = React.lazy(() => import("./components/Home"));
 const About = React.lazy(() => import("./components/About"));
+
 
 Step 2: Add Suspense and fallback mechanism
 <React.Suspense fallback={<p>Loading page...</p>}>  

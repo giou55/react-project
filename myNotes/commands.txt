@@ -1,6 +1,7 @@
 ΔΗΜΙΟΥΡΓΙΑ ΤΟΥ PROJECT
-npm create vite 
-ή npx create-react-app my-app
+npm create vite (είναι πιο γρήγορο)
+ή npm create vite@latest 
+ή npx create-react-app my-app (είναι πιο αργό)
 ή npx create-react-app . (create project in current folder)
 (npx is a package runner tool that comes with npm 5.2+.)
 
